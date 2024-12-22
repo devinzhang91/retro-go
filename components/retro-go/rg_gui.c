@@ -1545,6 +1545,7 @@ void rg_gui_about_menu(const rg_gui_option_t *extra_options)
         // {1, "View credits", NULL, RG_DIALOG_FLAG_NORMAL, NULL},
         {2, "Debug menu", NULL, RG_DIALOG_FLAG_NORMAL, NULL},
         {3, "Reset settings", NULL, RG_DIALOG_FLAG_NORMAL, NULL},
+        {4, "Power Off", NULL, RG_DIALOG_FLAG_NORMAL, NULL},
         RG_DIALOG_END,
     };
 
@@ -1577,6 +1578,13 @@ void rg_gui_about_menu(const rg_gui_option_t *extra_options)
                 }
                 break;
             case 4:
+                if (rg_gui_confirm("Shut down power?", "Power will shutdown after 30s.", false)) {
+                    rg_system_shutdown();
+                    rg_system_sleep();
+                    return;
+                }
+                break;
+            case 5:
                 rg_gui_options_menu();
                 break;
             default:
