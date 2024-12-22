@@ -1,7 +1,8 @@
 // REF: https://wiki.odroid.com/odroid_go/odroid_go
 
 // Target definition
-#define RG_TARGET_NAME             "ESPPLAY-NANO"
+
+#define RG_TARGET_NAME             "ESPLAY-NANO"
 
 // Storage
 #define RG_STORAGE_ROOT             "/sd"
@@ -104,3 +105,4 @@
 #define RG_GPIO_SND_I2S_WS          42
 #define RG_GPIO_SND_I2S_DATA        40
 // #define RG_GPIO_SND_AMP_ENABLE      18
+
