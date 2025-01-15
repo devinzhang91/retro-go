@@ -19,5 +19,5 @@ This port developed for, based on the ESP32-S3 microcontroller.
 
 # Images
 ![esplay-nano](./esplay-nano.jpeg)
-![3D rendering image](./esplay-nano-3D.png)
+![3D rendering image](./esplay-nano_3D.png)
 ![schematic](./esplay-nano_SCH.png)
